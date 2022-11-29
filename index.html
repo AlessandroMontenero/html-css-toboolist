@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>HTML-CSS-Toobolist</title>
+    </head>
+    <body>
+        <header>
+            <img src="./img/Logo.png" alt="Logo" class="logo">
+            <h1>Toboolist</h1>
+        </header>
+
+        <main>
+            <div class="buttonbar">
+                <input type="button" value="Add Task">
+                <input type="button" value="Add Section">
+            </div>
+            
+            <details open>
+                <summary>New Task</summary>
+                <div class="task" id="editorial">Quarterly Newsletter</div>
+            </details>
+
+            <details open>
+                <summary>Today</summary>
+                <div class="task" id="editorial">Recruiting blog post</div>
+                <div class="task" id="Q1_Goals">Mobile app launch</div>
+                <div class="task todo" id="recruiting">Interview John H.</div>
+                <div class="task" id="mobile">Summit Update to mobile storefronts</div>
+            </details>
+
+            <details open>
+                <summary>Upcoming</summary>
+                <div class="task todo">Schedule meeting with Alex</div>
+                <div class="task" id="website">Homepage refresh</div>
+                <div class="task" id="sales">Onboard new Sales team members</div>
+                <div class="task" id="editorial">Review editorial calendar</div>
+            </details>
+        </main>
+    </body>
+</html>
