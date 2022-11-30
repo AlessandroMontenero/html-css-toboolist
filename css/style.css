@@ -6,14 +6,29 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Header */
 header {
     height: 70px;
     line-height: 70px;
     background-color: white;
     display: flex;
     align-items:center;
-
 }
+
+.logo {
+    background-repeat: no-repeat;
+    padding: 10px;
+    display: inline-block;
+    height: 40px;
+}
+
+h1 {
+    margin: 5px;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+/* Main Board */
 
 main {
     margin: 40px 10%;
@@ -25,16 +40,43 @@ main {
     padding: 25px 20% 20px;
 }
 
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    border: 1px solid currentColor;
+}
+
+.btn:enabled {
+    background-color: rgb(88, 170, 230);
+}
+
+.btn:disabled {
+    background-color: transparent;
+    color: grey;
+}
+
+/* Task Board */
+
+
 details {
     padding: 10px 18% 20px;
 }
 
-.logo {
-    background-repeat: no-repeat;
-    padding: 10px;
-    display: inline-block;
-    height: 40px;
-    }
+summary {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.task {
+    padding-left: 0.5rem;
+    color: rgba(0, 0, 0, 0.8);
+}
 
 div.task::before {
     height: 1rem;
@@ -56,39 +98,4 @@ div.true::before {
 div.false::before {
     color: red;
     content: "x"
-}
-
-summary {
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-
-h1 {
-    margin: 5px;
-    display: inline-block;
-    font-size: 1.5rem;
-}
-
-.btn {
-    display: inline-block;
-    font-size: 1rem;
-    border-radius: 10px;
-    padding: 10px;
-    font-weight: bold;
-    color: white;
-    border: 1px solid currentColor;
-}
-
-.btn.btnprimary {
-    background-color: rgb(88, 170, 230);
-}
-
-.btn.btnoutlined {
-    background-color: transparent;
-    color: grey;
-}
-
-.task {
-    padding-left: 0.5rem;
-    color: rgba(0, 0, 0, 0.8);
 }
