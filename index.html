@@ -15,29 +15,30 @@
 
         <main>
             <div class="buttonbar">
-                <input type="button" value="Add Task">
-                <input type="button" value="Add Section">
+                <button class="button1">Add Task</button>
+                <button class="button2">Add Section</button>                
             </div>
             
             <details open>
                 <summary>New Task</summary>
-                <div class="task" id="editorial">Quarterly Newsletter</div>
+                <div class="task" id="editorial"><span class="dot" id="true">&check;</span>
+                    Quarterly Newsletter</div>
             </details>
 
             <details open>
                 <summary>Today</summary>
-                <div class="task" id="editorial">Recruiting blog post</div>
-                <div class="task" id="Q1_Goals">Mobile app launch</div>
-                <div class="task todo" id="recruiting">Interview John H.</div>
-                <div class="task" id="mobile">Summit Update to mobile storefronts</div>
+                <div class="task" id="editorial"><span class="dot" id="true">&check;</span>Recruiting blog post</div>
+                <div class="task" id="Q1_Goals"><span class="dot" id="true">&check;</span> Mobile app launch</div>
+                <div class="task" id="recruiting"><span class="dot" id="false">X</span>Interview John H.</div>
+                <div class="task" id="mobile"><span class="dot" id="true">&check;</span>Summit Update to mobile storefronts</div>
             </details>
 
             <details open>
                 <summary>Upcoming</summary>
-                <div class="task todo">Schedule meeting with Alex</div>
-                <div class="task" id="website">Homepage refresh</div>
-                <div class="task" id="sales">Onboard new Sales team members</div>
-                <div class="task" id="editorial">Review editorial calendar</div>
+                <div class="task"><span class="dot" id="false">X</span>Schedule meeting with Alex</div>
+                <div class="task" id="website"><span class="dot" id="true">&check;</span>Homepage refresh</div>
+                <div class="task" id="sales"><span class="dot" id="true">&check;</span>Onboard new Sales team members</div>
+                <div class="task" id="editorial"><span class="dot" id="true">&check;</span>Review editorial calendar</div>
             </details>
         </main>
     </body>
