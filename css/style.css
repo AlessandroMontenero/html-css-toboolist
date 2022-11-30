@@ -36,16 +36,26 @@ details {
     height: 40px;
     }
 
-.dot {
+div.task::before {
     height: 1rem;
     width: 1rem;
     background-color: white;
     border: 1px solid;
     border-radius: 50%;
     display: inline-block;
-    text-align: center;
+    text-align:center;
     font-size: 0.9rem;
     margin: 10px 10px 0px 2px;
+}
+
+div.true::before {
+    color: green;
+    content: "✓" ;
+}
+
+div.false::before {
+    color: red;
+    content: "x"
 }
 
 summary {
@@ -53,21 +63,14 @@ summary {
     font-weight: bold;
 }
 
-#true {
-    color: green;
-}
-#false {
-    color: red;
-}
-
-
 h1 {
     margin: 5px;
     display: inline-block;
     font-size: 1.5rem;
 }
 
-button {
+.btn {
+    display: inline-block;
     font-size: 1rem;
     border-radius: 10px;
     padding: 10px;
@@ -76,11 +79,11 @@ button {
     border: 1px solid currentColor;
 }
 
-.primary {
+.btn.btnprimary {
     background-color: rgb(88, 170, 230);
 }
 
-.outlined {
+.btn.btnoutlined {
     background-color: transparent;
     color: grey;
 }
