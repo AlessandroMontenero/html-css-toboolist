@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(255, 247, 237);
+    background-color: rgb(243, 222, 196);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -31,15 +31,18 @@ h1 {
 /* Main Board */
 
 main {
-    margin: 40px 10%;
+    margin: 60px 10%;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 25px;
 }
 
 .cardhead {
-    padding: 25px 20% 20px;
+    padding: 30px 20% 20px;
 }
 
+.cardbody {
+    padding: 0px 0px 30px;
+}
 /* Buttons */
 
 .btn {
@@ -53,7 +56,7 @@ main {
 }
 
 .btn:enabled {
-    background-color: rgb(88, 170, 230);
+    background-color: rgb(88, 170, 233);
 }
 
 .btn:disabled {
@@ -97,5 +100,46 @@ div.true::before {
 
 div.false::before {
     color: red;
-    content: "x"
+    content: "X"
+}
+
+/* Labels */
+
+span.label::after {
+    padding: 5px;
+    margin: auto 8px;
+    font-size: 0.7rem;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+span.editorial::after {
+    content:"Editorial";
+    background-color: rgb(88, 170, 233);
+}
+
+span.q1_goals::after {
+    content: "Q1 Goals";
+    background-color: rgb(157, 110, 228);
+}
+
+span.recruiting::after {
+    content:"Recruiting";
+    background-color: rgb(107, 192, 167);
+}
+
+span.mobile::after {
+    content:"Mobile";
+    background-color: rgb(236, 164, 65);
+}
+
+span.website::after {
+    content: "Website";
+    background-color: rgb(211, 96, 162);
+}
+
+span.sales::after {
+    content: "Sales";
+    background-color: rgb(175, 203, 38);
 }
